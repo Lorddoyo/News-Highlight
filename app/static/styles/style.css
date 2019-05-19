@@ -8,3 +8,13 @@ input[type=text] {
   input[type=text]:focus {
     width: 100%;
   }
+
+h2{
+  font-family: 'Anton', sans-serif;
+}
+h3{
+  font-family: 'Source Serif Pro', serif;
+}
+h4{
+  font-family: 'Exo 2', sans-serif 
+}
