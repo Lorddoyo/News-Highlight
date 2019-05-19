@@ -1,0 +1,74 @@
+<div class="col-md-8">
+<div class="output card">
+{% macro displaySearchList(articles) %}
+    {% for article in articles %}
+    <ul>
+        <li>{{article.title}}</li>
+        <li>{{article.author}}</li>
+        <li>{{article.description}}</li>
+        <li> <a href="{{article.url}}"></a>Vist Site</li>
+        <li><img src="{{article.urlToImage}}" alt="{{ article.title }} " class="img-responsive"></li>
+        <li>{{article.publishedAT}}</li>
+        <li>{{article.content}}</li>
+    </ul>
+    {% endfor %}
+{% endmacro %}
+</div>
+</div>
+
+
+{%macro displayNewsSources(categories) %}
+    {% for category in categories%}
+        <a href=" {{category.url}}">{{category.name}}</a>
+        <br>
+    {% endfor %}
+{% endmacro %}
+
+
+{%macro displayNewsSources(categories) %}
+    {% for category in categories%}
+        <a href=" {{category.url}}">{{category.name}}</a>
+        <br>
+    {% endfor %}
+{% endmacro %}
+
+
+{%macro displayNewsSources(categories) %}
+    {% for category in categories%}
+        <a href=" {{category.url}}">{{category.name}}</a>
+        
+        <br>
+    {% endfor %}
+{% endmacro %}
+
+
+{%macro displayNewsSources(categories) %}
+    {% for category in categories%}
+        <a href=" {{category.url}}">{{category.name}}</a>
+        <br>
+    {% endfor %}
+{% endmacro %}
+
+
+{%macro displayNewsSources(categories) %}
+    {% for category in categories%}
+        <a href=" {{category.url}}">{{category.name}}</a>
+        <br>
+    {% endfor %}
+{% endmacro %}
+
+
+{%macro displayNewsSources(categories) %}
+    {% for category in categories%}
+        <a href=" {{category.url}}">{{category.name}}</a>
+        <br>
+    {% endfor %}
+{% endmacro %}
+
+
+{%macro displayNewsSources(categories) %}
+    {% for category in categories%}
+        <a href=" {{category.url}}">{{category.name}}</a>
+        <br>
+    {% endfor %}
+{% endmacro %}
