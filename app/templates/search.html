@@ -20,19 +20,21 @@
             {% for article in articles %}
             <ul>
                
-                <h4>{{article.title}}</h4>
+                <h2>{{article.title}}</h2>
                 <hr>
-                <h4>{{article.author}}</h4>
-                <br>
-                <h4>{{article.description}}</h4>
-                <br>
-                <h4><a href="{{article.url}}">vist site</a></h4>
+                <h3>{{article.author}}</h3>
                 <br>
                 <h4><img src="{{article.urlToImage}}" alt="{{ article.title }} " class="img-responsive"></h4>
                 <br>
+                <h4>{{article.content}} <a href="{{article.url}}">vist site</a></h4>
+                <p>{{article.description}} <a href="{{article.url}}">vist site</a></p>
+                <br>
                 <h4>{{article.pubh4shedAT}}</h4>
                 <br>
-                <h4>{{article.content}}</h4>
+                <hr>
+                <br>
+                <hr>
+                
             </ul>
             {% endfor %}
             </div>
