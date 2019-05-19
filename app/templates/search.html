@@ -1,1 +1,49 @@
 {% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+</head>
+<body>
+    {% block content %}
+    <div class="container">
+
+        <div class="row">
+                <div class="col-md-8">
+                        <div class="output card">
+
+            <h3> Found {{ articles| count }} matches </h3>
+            <hr>
+            {% for article in articles %}
+            <ul>
+               
+                <h4>{{article.title}}</h4>
+                <hr>
+                <h4>{{article.author}}</h4>
+                <br>
+                <h4>{{article.description}}</h4>
+                <br>
+                <h4><a href="{{article.url}}">vist site</a></h4>
+                <br>
+                <h4><img src="{{article.urlToImage}}" alt="{{ article.title }} " class="img-responsive"></h4>
+                <br>
+                <h4>{{article.pubh4shedAT}}</h4>
+                <br>
+                <h4>{{article.content}}</h4>
+            </ul>
+            {% endfor %}
+            </div>
+        
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}
+    
+    
+</body>
+</html>
