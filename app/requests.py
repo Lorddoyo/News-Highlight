@@ -76,22 +76,22 @@ def get_sources():
 
             return all_news_sources
 
-# def get_top_headlines():
-#     '''
-#     '''
-#     get_headlines_url = top_headlines_url.format(api_key)
+def get_top_headlines():
+    '''
+    '''
+    get_headlines_url = top_headlines_url.format(api_key)
 
-#     with urllib.request.urlopen(get_headlines_url) as url:
-#         headlines_data = url.read()
-#         headlines_response = json.loads(headlines_data)
+    with urllib.request.urlopen(get_headlines_url) as url:
+        headlines_data = url.read()
+        headlines_response = json.loads(headlines_data)
 
-#         all_headlines_list = []
+        all_headlines_list = []
 
-#         if headlines_response['articles']:
-#             headlines_list = headlines_response['articles']
-#             all_headlines_list = process_news(headlines_list)
+        if headlines_response['articles']:
+            headlines_list = headlines_response['articles']
+            all_headlines_list = process_news(headlines_list)
 
-#             return all_headlines_list
+            return all_headlines_list
 
 
 

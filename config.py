@@ -4,7 +4,7 @@ class Config:
     '''
     General configuration parent class
     '''
-    TOP_HEADLINES_URL = 'https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey={}'
+    TOP_HEADLINES_URL = 'https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey={}'
     EVERYTHING_URL = 'https://newsapi.org/v2/everything?sources={}&apikey={}'
     SOURCES_URL = 'https://newsapi.org/v2/sources?apiKey={}'
     CATEGORY_URL = 'https://newsapi.org/v2/sources?category={}&apiKey={}'

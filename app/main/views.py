@@ -1,4 +1,4 @@
-from ..requests import get_sources,get_by_category,search_article
+from ..requests import get_sources,get_by_category,search_article,get_top_headlines
 from flask import render_template, request, redirect, url_for
 from . import main
 
@@ -9,6 +9,7 @@ def index():
     '''
     title = 'NotableEventsWeatherAndSports'
     source = get_sources()
+    top_headlines = get_top_headlines()
     categories = ['business', 'entertainment', 'general', 'health', 'science', 'sports', 'technology']
     elements=[get_by_category(item) for item in categories]
 
@@ -18,7 +19,7 @@ def index():
         item = '+'.join(name_list)
         return redirect(url_for('main.search', name = item))
     else:
-        return render_template( 'source.html', title = title, sources = source, categories = elements )
+        return render_template( 'source.html', title = title, sources = source, categories = elements,headlines = top_headlines )
 
 
     
